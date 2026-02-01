@@ -10,37 +10,5 @@
         "fileName": "freeXpansion.zip",
         "updated": "FreePlay bonusSongs"
     },
-    {
-        "link": "https://gamebanana.com/dl/1240467",
-        "modpack": "isaBmUpdate",
-        "descripcion": "version alpha de la nueva week ",
-        "min_version": "0.2.5",
-        "recommended": "",
-        "logo": "https://raw.githubusercontent.com/Felixelpapu25/insaneVersion/main/update.png",
-        "author": "",
-        "fileName": "isaBm.zip",
-        "updated": "IsaBm update"
-    },
-    {
-        "link": "https://github.com/FelixGsf/BSW1/releases/download/W1BS/BSW1.zip",
-        "modpack": "Week1 Shaders!",
-         "descripcion": "Este shader mejora los feos shaders de la version 3.4F\n por unos mas lindos a la vista!",
-        "min_version": "3.4F",
-        "recommended": "YES",
-        "logo": "https://raw.githubusercontent.com/Felixelpapu25/insaneVersion/main/update.png",
-        "author": "Sax_sh3",
-        "fileName": "isaBm.zip",
-        "updated": "BW1S"
-    },
-      {
-        "link": "https://github.com/FelixGsf/Public-source-INSANE-DAYS/releases/download/Full-weeks/Full_WEEKS.zip",
-        "modpack": "Completed_game",
-         "descripcion": "Te da pereza desbloquear todo el juego? este addon desbloquea todas las weeks!\nNOTA: este addon sobreescribe los archivos originales.",
-        "min_version": "3.4F",
-        "recommended": "YES",
-        "logo": "https://raw.githubusercontent.com/Felixelpapu25/insaneVersion/main/update.png",
-        "author": "MariOG_2",
-        "fileName": "COMPLETED.zip",
-        "updated": "Completed Game ADDON"
-   }
+
 ]
