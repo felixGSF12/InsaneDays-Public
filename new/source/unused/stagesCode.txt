@@ -1,0 +1,151 @@
+/*AAAAAAAAAAAAAAAAH joPUTASSSS ¿por que no me dijeron 
+se que podian crear escenarion con ".json" yo como
+ahuevada programando esos gran putos escenario😭😭😭
+
+te odio felix
+*/
+/*function createStages(){
+     
+    switch (PlayState.curStage){
+        case 'day1':
+            if (songName == "anorexic"){ //rayo stage
+            bg = new FlxSprite(-600, 100).loadGraphic(Paths.image('BackGrounds/W1/sky'));
+            bg.scrollFactor.set(0.8,0.8);
+            stageObjects.add(bg);
+           var city:FlxSprite = new FlxSprite(-600,100).loadGraphic(Paths.image('BackGrounds/W1/city'));
+           city.scrollFactor.set(0.8,0.8);
+           stageObjects.add(city);
+           var floor:FlxSprite = new FlxSprite(-720,160).loadGraphic(Paths.image('BackGrounds/W1/street'));
+           stageObjects.add(floor);
+            }
+        else{
+            bg = new FlxSprite(-600, 100).loadGraphic(Paths.image('BackGrounds/W1/skyShade'));
+            bg.scrollFactor.set(0.8,0.8);
+            stageObjects.add(bg);
+           var city:FlxSprite = new FlxSprite(-600,100).loadGraphic(Paths.image('BackGrounds/W1/cityShade'));
+           city.scrollFactor.set(0.8,0.8);
+           stageObjects.add(city);
+           var floor:FlxSprite = new FlxSprite(-720,160).loadGraphic(Paths.image('BackGrounds/W1/streetShade'));
+           stageObjects.add(floor);
+           createBlooms(); 
+        }
+        case 'night': //exmix stage
+            if (songName == 'egocentric' || songName == 'vaper'){
+            bg = new FlxSprite(-400, -200).loadGraphic(Paths.image('BackGrounds/W2/SkyN'));
+            bg.scrollFactor.set(0.8,0.8);
+            stageObjects.add(bg);
+           var floor:FlxSprite = new FlxSprite(-100,0).loadGraphic(Paths.image('BackGrounds/W2/floorN'));
+           stageObjects.add(floor);
+           var vaperGang:FlxSprite = new FlxSprite(580,870);
+           vaperGang.frames = Paths.getSparrowAtlas('BackGrounds/W2/gangN');
+           vaperGang.animation.addByPrefix('idle','VaperGangDay',24,true);
+           vaperGang.animation.play('idle');
+           stageObjects.add(vaperGang);
+           createBlooms();
+            }
+            else{
+            bg = new FlxSprite(-400, -200).loadGraphic(Paths.image('BackGrounds/W2/city_shit'));
+            bg.scrollFactor.set(0.8,0.8);
+            stageObjects.add(bg);
+           var floor:FlxSprite = new FlxSprite(-100,0).loadGraphic(Paths.image('BackGrounds/W2/floor'));
+           stageObjects.add(floor);
+           var vaperGang:FlxSprite = new FlxSprite(580,870);
+           vaperGang.frames = Paths.getSparrowAtlas('BackGrounds/W2/VapeGang');
+           vaperGang.animation.addByPrefix('idle','VaperGangDay',24,true);
+           vaperGang.animation.play('idle');
+           stageObjects.add(vaperGang);
+            }
+
+             case 'day3': // luzhy stage
+                if (songName != 'esquizofrenia'){   
+            var restaurant:FlxSprite = new FlxSprite(-800,0).loadGraphic(Paths.image('BackGrounds/W3/normal_stage'));
+            stageObjects.add(restaurant);
+            var tables:FlxSprite = new FlxSprite(-550,-300).loadGraphic(Paths.image('BackGrounds/W3/sumtable'));
+            tables.scrollFactor.set(0.5,0.5);
+            stageObjectsFront.add(tables);
+                }
+                else{
+                    var destroyRe:FlxSprite = new FlxSprite(-700,-280).loadGraphic(Paths.image('BackGrounds/W3/youhavebeendestroyed'));
+                    dad.x -= 300; 
+                    stageObjects.add(destroyRe);
+                var tables:FlxSprite = new FlxSprite(-550,-420).loadGraphic(Paths.image('BackGrounds/W3/overlayingsticks'));
+                 tables.scrollFactor.set(0.5,0.5);
+                 stageObjectsFront.add(tables);
+                 gf.alpha = 0;
+                 var fireScales:Float = 1.9;
+                 var alphas:Float = 0.87;
+                 var fire1:FlxSprite = new FlxSprite(-400,210);
+                 fire1.frames = Paths.getSparrowAtlas('BackGrounds/W3/newfireglow');
+                 fire1.scale.set(fireScales,fireScales);
+                 fire1.animation.addByPrefix('glo','FireStage',24,true);
+                 fire1.animation.play('glo');
+                 fire1.alpha = alphas;
+                 stageObjects.add(fire1);
+                var fire2:FlxSprite = new FlxSprite(670,210);
+                 fire2.frames = Paths.getSparrowAtlas('BackGrounds/W3/newfireglow');
+                 fire2.alpha = alphas;
+                 fire2.scale.set(fireScales,fireScales);
+                 fire2.animation.addByPrefix('glo','FireStage',24,true);
+                 fire2.animation.play('glo');
+                 stageObjects.add(fire2);
+                   var furniture:FlxSprite = new FlxSprite(-780,-130).loadGraphic(Paths.image('BackGrounds/W3/glowyfurniture'));
+                 stageObjects.add(furniture);
+                }
+                case 'day4': //leo stage
+                    if (songName != 'furryphobia'){
+                     var speakers:FlxSprite = new FlxSprite(-700,-50);
+                      speakers.frames = Paths.getSparrowAtlas('BackGrounds/W4/images/speakers');
+                    speakers.animation.addByPrefix('idle','speakerBeat',24,true);
+                    speakers.animation.play('idle');
+                     stageObjects.add(speakers);
+                    var room:FlxSprite = new FlxSprite(-1200,-200).loadGraphic(Paths.image('BackGrounds/W4/images/BGDay'));
+                    bombox.visible = false;
+                    stageObjects.add(room);
+                    }
+                    else{
+                        var speakers:FlxSprite = new FlxSprite(-700,-50);
+                      speakers.frames = Paths.getSparrowAtlas('BackGrounds/W4/images/speakers');
+                    speakers.animation.addByPrefix('idle','speakerBeat',24,true);
+                    speakers.animation.play('idle');
+                     stageObjects.add(speakers);
+                    var room:FlxSprite = new FlxSprite(-1200,-200).loadGraphic(Paths.image('BackGrounds/W4/images/BGDarkNew'));
+                    bombox.visible = false;
+                    stageObjects.add(room); 
+                    boyfriend.x -= 300;
+                    boyfriend.y += 70;
+                    boyfriend.color = 0x726bd8;
+                    dad.color = boyfriend.color;
+                    gf.color = boyfriend.color;
+                    gf.y -= 40;
+                    gf.x -=80;
+                    }
+                    case 'day5':
+                    if (dad.curCharacter == 'fxdad'){
+            var bg:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('BackGrounds/W5/images/mallP'));
+                    stageObjects.add(bg);
+                    var crown:FlxSprite = new FlxSprite(200,950);
+                    crown.frames = Paths.getSparrowAtlas('BackGrounds/W5/images/cameos');
+                    crown.scrollFactor.set(0.73,0.73);
+                    crown.scale.set(1.2,1.2);
+                    crown.animation.addByPrefix('idle','Idle',24,true);
+                    crown.animation.play('idle');
+                    stageObjectsFront.add(crown);
+                    }
+                    else
+                 {
+                    isMomStage2 = true;
+            var bg:FlxSprite = new FlxSprite(1300,0).loadGraphic(Paths.image('BackGrounds/W5/images/limoSunset'));
+            bg.scale.set(2,2);
+            stageObjects.add(bg);
+            var car1:FlxSprite = new FlxSprite(1000,1340);
+            car1.frames = Paths.getSparrowAtlas('BackGrounds/W5/images/limoDrive');
+            car1.animation.addByPrefix('blow','Limo stage0',24,true);
+            car1.scale.set(1.8,1.5);
+            car1.animation.play('blow');
+            stageObjects.add(car1);
+            boyfriend.color = 0x757575;
+            gf.color = 0x757575;
+            boyfriend.y -= 50;
+    }
+    }
+}*/
